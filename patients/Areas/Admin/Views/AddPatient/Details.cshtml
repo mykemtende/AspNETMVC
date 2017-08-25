@@ -1,0 +1,123 @@
+﻿@model Patients.Areas.Admin.Models.AddPatient
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AddPatient</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FHname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FHname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Complaint)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Complaint)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sex)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sex)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Place)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Place)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Inpatient)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Inpatient)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Doctorcode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Doctorcode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Testcode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Testcode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Roomcode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Roomcode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateAdmitted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateAdmitted)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
